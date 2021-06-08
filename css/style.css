@@ -1,0 +1,450 @@
+*{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+
+/************************************ Sección uno ************************************/
+
+.header{
+    width: 100%;
+    min-height: 660px;
+    background: linear-gradient(180deg, rgb(149, 47, 87),  rgb(0, 0, 0));
+}
+
+.header__div{
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 35px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+
+.header__image{
+    height: 60px;
+}
+
+.header__nav{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 180px;
+    margin-right: 10px;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__list--li{
+    padding: 13px;
+}
+
+.nav__list--link:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: rgb(16, 114, 13);
+    transition: all ease-in-out 250ms;
+}
+
+.header__nav--image{
+    display: none;   /*Ocultar el icono*/
+    width: 80px;
+    color: white;
+}
+
+
+
+
+.header__main{
+    width: 100%;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    overflow: hidden; /*Esconder imagen cuando sobrepasa el tamaño*/
+}
+
+.main__informacion{
+    align-self: center;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.main__titulo{
+    padding: 10px;
+    font-size: 40px;
+}
+
+.main__titulo::first-letter{
+    color: rgb(177, 4, 4);
+    font-size: 80px;
+}
+
+.main__parrafo{
+    padding: 10px;
+}
+
+.main__bandera{
+    padding: 30px 10px;
+    opacity: 0.3;
+}
+
+.main__boton{
+    background: linear-gradient(180deg, rgb(149, 47, 87),  rgb(0, 0, 0));
+    /*Alinear boton al centro*/
+    display:block;
+    margin: auto;
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 13px;
+    text-align: center;
+    padding: 6px;
+}
+
+.main__boton:hover{
+    background: linear-gradient(180deg, rgb(16, 114, 13),  rgb(0, 0, 0));
+}
+
+.main__img{
+    align-self: center;
+    width: 50%;
+}
+
+.img__jav{
+    width: 70%;
+    padding-bottom: 10px;
+}
+
+
+
+/************************************ Sección dos ************************************/
+
+.seccion__dos{
+    width: 100%;
+    min-height: 660px;
+    background: linear-gradient(180deg,  rgb(116, 111, 111), rgb(255, 255, 255));
+    text-align: center;
+    padding: 50px;
+}
+
+.dos{
+    display: flex;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.dos__card{
+    width: 400px;
+}
+
+.dos__img{
+    width: 80%;
+}
+
+.dos__img:hover{
+    opacity: 0.2;
+}
+
+.dos__titulo{
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    color:rgb(0, 0, 0);
+}
+
+.dos__subtitulo{
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    color:rgb(0, 0, 0);
+}
+
+.dos__boton{
+    background: linear-gradient(180deg, rgb(149, 47, 87),  rgb(0, 0, 0));
+    display: inline-block;
+    color: white;
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 13px;
+    text-align: center;
+    padding: 6px;
+}
+
+.dos__boton:hover{
+    background: linear-gradient(180deg, rgb(16, 114, 13),  rgb(0, 0, 0));
+}
+
+
+
+/************************************ Sección tres ************************************/
+
+.seccion__tres{
+    background-color: white;
+    min-height: 400px;
+    padding: 40px;
+}
+
+.tres__titulo{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    color:rgb(0, 0, 0);
+}
+
+/*
+.flecha{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flecha__izq{
+    position: relative;
+    top: 80px;
+    left: 20px;
+    cursor: pointer;
+    color:rgb(116, 111, 111);
+}
+
+.flecha__izq:hover{
+    color:rgb(149, 47, 87);
+}
+
+
+.flecha__der{
+    position: relative;
+    top: 80px;
+    right: 20px;
+    cursor: pointer;
+    color:rgb(116, 111, 111);
+}
+
+.flecha__der:hover{
+    color:rgb(149, 47, 87);
+}*/
+
+.tecno{
+    display: flex;
+    flex-direction: column;
+}
+
+.tecno__card{
+    align-self: center;
+    /*margin: -40px;*/
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 40px;
+}
+
+.card__img{
+    width: 100%;
+}
+
+
+/************************************ Sección cuatro ************************************/
+
+.seccion__cuatro{
+    background:  rgb(12, 99, 17);
+    min-height: 660px;
+    padding: 65px 50px;
+    text-align: center;
+    color: white;
+}
+
+.cuatro__titulo{
+    font-size: 30px;
+    padding-top: 1px;
+    padding-bottom: 30px;
+}
+
+.cuatro__subtitulo{
+    line-height: 30px;
+}
+
+.cuatro{
+    display: flex;
+    justify-content: center;
+}
+
+.cuatro__img{
+    align-content: center;
+    /*display: block;*/
+    /*margin: auto;*/
+    padding-bottom: 30px;
+}
+
+.cuatro__logos1{
+    margin-top: -9px;
+    height: 300px;
+}
+
+.cuatro__logos2{
+    margin-top: 10px;
+    height: 254px; 
+}
+
+
+
+/************************************ Sección cinco ************************************/
+
+.seccion__cinco{
+    background:  rgb(0, 0, 0);
+    min-height: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 65px 50px 15px;
+}
+
+.cinco{
+    display: flex;
+    justify-content: center;
+}
+
+.cinco__titulo{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+
+.cinco__img{
+    padding: 20px 40px;
+    align-self: center;
+    padding-bottom: 40px;
+}
+
+.cinco__link{
+    text-decoration: none;
+}
+
+.far{
+    color:rgb(255, 255, 255);
+}
+
+.far:hover{
+    color: rgb(149, 47, 87);
+}
+
+.fab1{
+    color:rgb(255, 255, 255);
+}
+
+.fab1:hover{
+    color:rgb(16, 114, 13);
+}
+
+.fab2{
+    color:rgb(255, 255, 255);
+}
+
+.fab2:hover{
+    color:rgb(77, 78, 77);
+}
+
+
+/************************************ Diseño Responsivo ************************************/
+
+@media (max-width: 800px)
+{
+    .nav__list{
+        position: fixed;
+        width: 40%;
+        height: 670px;
+        background-color:rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateX(110%);
+        right: 0;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    }
+    
+    .header__nav--image{
+        padding: 30px;
+        display: block;   /* Mostrar el icono */
+        cursor: pointer;
+    }
+    
+    .spread{
+        transform: translateX(0);   /* Clase para trasladar la navegación */
+        transition: transform 0.3s ease-in-out;  /* Cuando se oculte el nav no sea tan brusco */
+    }
+
+
+    .header__main{
+        flex-direction: column;
+        height: 900px;
+        /*padding-top: 100px;*/
+        padding-top: 100px;
+        
+    }
+
+    .img__jav{
+        width: 120%;
+    }
+
+    .dos{
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    .dos__card{
+        padding-bottom: 20px;
+        display:block;
+        margin: auto;
+    }
+
+
+    .tres__titulo{
+        padding: 0px;
+    }
+
+    .tecno__card{
+        padding-top: 80px;
+    }
+
+    .card__img{
+        width: 300%;
+        padding: 0px;
+        align-content: center;
+    }
+
+
+    .cuatro__img{
+        overflow: hidden;
+        display: block;
+        margin: auto;
+    }
+    
+    .cuatro__logos1{
+        margin-top: 15px;
+        height: 200px;
+
+    }
+    
+    .cuatro__logos2{
+        margin-top: 10px;
+        height: 170px;
+    }
+
+}
