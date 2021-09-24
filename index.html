@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Javier Sanchez Malagon</title>
     <link rel="icon" href="img/logo__javier.png">
+    <!--Iconos de Fontawesome-->
     <script src="https://kit.fontawesome.com/699bf8f908.js" crossorigin="anonymous"></script>
+    <!--Estilos CSS3-->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     
 </head>
 <body>
 
+    <div id="particles-js">
+
+    </div>
+
+    
     <!--Sección uno-->
     <header class="header" id="Inicio">
         <div class="header__div">
@@ -35,7 +42,12 @@
                 <h1 class="main__titulo">Javier Sánchez Malagón</h1>
                 <p class="main__parrafo">Ingeniero en Computación</p>
                 <img class="main__bandera" src="img/bandera.png">
-                <p class="main__boton"><a class="main__enlace" href="pdf/CV-JavierSanchezMalagon.pdf" download="CV_JavierSanchez">Descargar CV</a></p>
+                <p class="main__boton">
+                    <img src="/img/Iconos/download-solid.svg">
+                    <a class="main__enlace" href="pdf/CV-JavierSanchezMalagon.pdf" download="CV_JavierSanchez">Descargar CV</a>
+                </p>
+
+
             </div>
             <div class="main__img">
                 <img src="img/img__javier.png" class="img__jav">
@@ -49,45 +61,51 @@
     <div class="seccion__dos" id="Portafolio">
         <h1 class="dos__titulo">Portafolio</h1>
 
-        <div class="dos">
-            <div class="dos__card">
-                <img class="dos__img" src="img/proyecto__1.png">
-                <h3 class="dos__subtitulo"> Página EDsoft</h3>
-                <a href="https://copia-edsoft.netlify.app/" target="_blank"><p class="dos__boton">Ver más</p></a>
+            <!--Consumo de una API, Copia de Netflix Front-End-->
+        
+        
+        <div class="dos__contenedor">
+            <div class="contenedor">
+                <figure>
+                    <img class="imagen" src="img/proyecto__1.png">
+                    <div class="capa">
+                        <h3 class="titulo">Página EDsoft</h3>
+                        <p class="parrafo">HTML5<br>CSS3<br>JavaScript<br>Diseño Web Responsivo
+                        </p>
+                        <a href="https://copia-edsoft.netlify.app/" target="_blank"><p class="dos__boton">Ver más</p></a>
+                    </div>
+                </figure>
             </div>
 
-            <div class="dos__card">
-                <img class="dos__img" src="img/proyecto__1.png">
-                <h3 class="dos__subtitulo"> Consumo de una API</h3>
-                <a href="#"><p class="dos__boton">Ver más</p></a>
+            <div class="contenedor">
+                <figure>
+                    <img class="imagen" src="img/proyecto__2.png">
+                    <div class="capa">
+                        <h3 class="titulo"> Página web con Bootstrap</h3>
+                        <p class="parrafo">HTML5<br>Bootstrap<br>CSS3
+                        </p>
+                        <a href="https://copia-edsoft.netlify.app/" target="_blank"><p class="dos__boton">Ver más</p></a>
+                    </div>
+                </figure>
             </div>
 
-            <div class="dos__card">
-                <img class="dos__img" src="img/proyecto__1.png">
-                <h3 class="dos__subtitulo"> Conexión BD Oracle o Java</h3>
-                <a href="#"><p class="dos__boton">Ver más</p></a>
+            <div class="contenedor">
+                <figure>
+                    <img class="imagen" src="img/proyecto__3.png">
+                    <div class="capa">
+                        <h3 class="titulo"> Login con Bootstrap</h3>
+                        <p class="parrafo">HTML5<br>CSS3<br>Bootstrap<br>
+                        </p>
+                        <a href="https://copia-edsoft.netlify.app/" target="_blank"><p class="dos__boton">Ver más</p></a>
+                    </div>
+                </figure>
             </div>
         </div>
 
-        <div class="dos">
-            <div class="dos__card">
-                <img class="dos__img" src="img/proyecto__1.png">
-                <h3 class="dos__subtitulo"> Página web con Bootstrap</h3>
-                <a href="https://copia-edsoft.netlify.app/" target="_blank"><p class="dos__boton">Ver más</p></a>
-            </div>
+    
 
-            <div class="dos__card">
-                <img class="dos__img" src="img/proyecto__1.png">
-                <h3 class="dos__subtitulo"> Lorem ipsum dolor!</h3>
-                <a href="#"><p class="dos__boton">Ver más</p></a>
-            </div>
 
-            <div class="dos__card">
-                <img class="dos__img" src="img/proyecto__1.png">
-                <h3 class="dos__subtitulo"> Lorem ipsum dolor!</h3>
-                <a href="#"><p class="dos__boton">Ver más</p></a>
-            </div>
-        </div>
+
     </div>
 
 
@@ -96,15 +114,23 @@
     <div class="seccion__tres" id="Conocimientos">
 
         <h1 class="tres__titulo">Conocimientos</h1>
+        
     
-        <div>
-            <img src="img/Iconos/html5-brands.svg">
-            <img src="img/Iconos/css3-alt-brands.svg">
-            <img src="img/Iconos/bootstrap-brands.svg">
-            <img src="img/Iconos/js-square-brands.svg">
-            <img src="img/Iconos/database-solid.svg">
-            <img src="img/Iconos/github-brands.svg">
+        <div class="tres__galeria">
+            <img class="tres__img" src="img/Iconos/html5-brands.svg">
+            <img class="tres__img" src="img/Iconos/css3-alt-brands.svg">
+            <img class="tres__img" src="img/Iconos/bootstrap-brands.svg">
+            <img class="tres__img" src="img/Iconos/js-square-brands.svg">
+            <img class="tres__img" src="img/Iconos/database-solid.svg">
+            <img class="tres__img" src="img/Iconos/github-brands.svg">
+            <img class="tres__img" src="img/Iconos/file-word-regular.svg">
+            <img class="tres__img" src="img/Iconos/file-excel-regular.svg">
+            <img class="tres__img" src="img/Iconos/file-powerpoint-regular.svg">
+            <img class="tres__img" src="img/Iconos/apple-brands.svg">
+            <img class="tres__img" src="img/Iconos/windows-brands.svg">
+            <img class="tres__img" src="img/Iconos/linux-brands.svg">
         </div>
+
 
     </div>
 
@@ -158,17 +184,20 @@
                 </div>
             </div>
             
-            <p>Javier Sánchez Malagón &copy Todos los derechos reservados 2021</p>
+            <p class="cinco__subtitulo">Javier Sánchez Malagón &copy Todos los derechos reservados 2021</p>
         </footer>
     </div>
 
 
+    <!--Particulas.js-->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
+    <script src="/js/app.js"></script>
     <!--JavaScript-->
     <script src="js/menu.js"></script>
 
-    <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
     
 </body>
 </html>

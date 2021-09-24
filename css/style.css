@@ -5,13 +5,25 @@
     font-family:'Times New Roman', Times, serif;
     text-decoration: none;
     font-size: 16px;
-    color: white;
     box-sizing: border-box;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+
+/************************************ Sección uno ************************************/
+
+
+
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
 }
 
 
 
-/************************************ Sección uno ************************************/
 
 .header{
     width: 100%;
@@ -29,7 +41,7 @@
     padding-right: 35px;
     justify-content: space-between;
     position: fixed;
-    z-index: 10;
+    z-index: 30;
 }
 
 .header__image{
@@ -65,7 +77,9 @@
     color: white;
 }
 
-
+.header__nav--image:hover{
+    transform: scale(1.2);
+}
 
 
 .header__main{
@@ -80,6 +94,7 @@
 }
 
 .main__informacion{
+    position: relative;
     align-self: center;
     text-align: center;
     color: white;
@@ -102,13 +117,13 @@
 
 .main__bandera{
     padding: 30px 10px;
-    opacity: 0.3;
+    opacity: 1;
 }
 
 .main__boton{
     background: linear-gradient(180deg, rgb(149, 47, 87),  rgb(0, 0, 0));
     /*Alinear boton al centro*/
-    display:block;
+    display: block;
     margin: auto;
     width: 150px;
     height: 35px;
@@ -125,6 +140,7 @@
 .main__img{
     align-self: center;
     width: 50%;
+    z-index: 20;
 }
 
 .img__jav{
@@ -134,46 +150,98 @@
 
 
 
+
 /************************************ Sección dos ************************************/
 
 .seccion__dos{
+    position: relative;
     width: 100%;
     min-height: 660px;
     background: linear-gradient(180deg,  rgb(116, 111, 111), rgb(255, 255, 255));
     text-align: center;
-    padding: 50px;
+    padding: 50px 50px 50px 10px;
+    z-index: 20;
 }
 
-.dos{
+
+.dos__contenedor{
     display: flex;
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-.dos__card{
-    width: 400px;
-}
-
-.dos__img{
-    width: 80%;
-}
-
-.dos__img:hover{
-    opacity: 0.2;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .dos__titulo{
     padding-top: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
     font-size: 30px;
     color:rgb(0, 0, 0);
 }
 
-.dos__subtitulo{
-    font-size: 16px;
-    padding-top: 15px;
-    padding-bottom: 25px;
-    color:rgb(0, 0, 0);
+.contenedor{
+    padding-left: 60px;
+    padding-bottom: 50px;
+}
+
+
+.contenedor figure{
+    position: relative;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11,103,123,0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.contenedor figure:hover > img{
+    transform: scale(1.3);
+}
+
+.titulo{
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.parrafo{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    padding: 40px 10px;
 }
 
 .dos__boton{
@@ -194,12 +262,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 /************************************ Sección tres ************************************/
 
 .seccion__tres{
+    position: relative;
     background-color: white;
     min-height: 400px;
-    padding: 40px;
+    padding:40px;
 }
 
 .tres__titulo{
@@ -210,60 +289,29 @@
     color:rgb(0, 0, 0);
 }
 
-/*
-.flecha{
-    display: flex;
-    justify-content: space-between;
+.tres__galeria{
+    padding: 10px;
+    text-align: center;
+    /*display: flex;*/
 }
 
-.flecha__izq{
-    position: relative;
-    top: 80px;
-    left: 20px;
-    cursor: pointer;
-    color:rgb(116, 111, 111);
-}
-
-.flecha__izq:hover{
-    color:rgb(149, 47, 87);
+.tres__img{
+    padding: 10px 50px;
 }
 
 
-.flecha__der{
-    position: relative;
-    top: 80px;
-    right: 20px;
-    cursor: pointer;
-    color:rgb(116, 111, 111);
-}
 
-.flecha__der:hover{
-    color:rgb(149, 47, 87);
-}*/
 
-.tecno{
-    display: flex;
-    flex-direction: column;
-}
 
-.tecno__card{
-    align-self: center;
-    /*margin: -40px;*/
-    padding-left: 170px;
-    padding-right: 170px;
-    padding-top: 40px;
-}
-
-.card__img{
-    width: 100%;
-}
 
 
 /************************************ Sección cuatro ************************************/
 
 .seccion__cuatro{
-    background:  rgb(12, 99, 17);
+    position: relative;
+    width: 100%;
     min-height: 660px;
+    background:  rgb(12, 99, 17);
     padding: 65px 50px;
     text-align: center;
     color: white;
@@ -306,16 +354,19 @@
 /************************************ Sección cinco ************************************/
 
 .seccion__cinco{
-    background:  rgb(0, 0, 0);
+    width: 100%;
     min-height: 50px;
+    background:  rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 65px 50px 15px;
+    z-index: 30;
 }
 
 .cinco{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .cinco__titulo{
@@ -323,6 +374,11 @@
     text-align: center;
     font-size: 30px;
     padding-bottom: 30px;
+    position: relative;
+}
+
+.cinco__subtitulo{
+    position: relative;
 }
 
 
@@ -330,6 +386,7 @@
     padding: 20px 40px;
     align-self: center;
     padding-bottom: 40px;
+    
 }
 
 .cinco__link{
@@ -342,6 +399,7 @@
 
 .far:hover{
     color: rgb(149, 47, 87);
+    transform: scale(1.5);
 }
 
 .fab1{
@@ -350,6 +408,7 @@
 
 .fab1:hover{
     color:rgb(16, 114, 13);
+    transform: scale(1.5);
 }
 
 .fab2{
@@ -358,6 +417,7 @@
 
 .fab2:hover{
     color:rgb(77, 78, 77);
+    transform: scale(1.5);
 }
 
 
@@ -403,15 +463,20 @@
         width: 120%;
     }
 
-    .dos{
-        flex-direction: column;
-        padding-bottom: 0px;
+    .seccion__dos{
+        padding: 50px;
     }
 
-    .dos__card{
-        padding-bottom: 20px;
-        display:block;
-        margin: auto;
+    .dos__contenedor{
+        flex-direction: column;
+    }
+
+    .contenedor figure{
+        width: 80%;
+    }
+
+    .seccion__tres{
+        padding: 65px 40px;
     }
 
 
@@ -422,6 +487,11 @@
     .tecno__card{
         padding-top: 80px;
     }
+
+    .tres__img{
+        padding: 10px 30px;
+    }
+    
 
     .card__img{
         width: 300%;
