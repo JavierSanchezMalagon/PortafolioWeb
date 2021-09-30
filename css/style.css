@@ -13,8 +13,6 @@
 
 /************************************ Sección uno ************************************/
 
-
-
 #particles-js{
     height: 100vh;
     width: 100%;
@@ -23,12 +21,10 @@
 }
 
 
-
-
 .header{
     width: 100%;
     min-height: 660px;
-    background: linear-gradient(180deg, rgb(149, 47, 87),  rgb(0, 0, 0));
+    background: linear-gradient(180deg, rgb(0, 0, 0),rgb(149, 47, 87));
 }
 
 .header__div{
@@ -38,7 +34,7 @@
     display: flex;
     align-items: center;
     padding-left: 50px;
-    padding-right: 35px;
+    padding-right: 50px;
     justify-content: space-between;
     position: fixed;
     z-index: 30;
@@ -52,8 +48,7 @@
     width: 70%;
     display: flex;
     justify-content: flex-end;
-    margin-left: 180px;
-    margin-right: 10px;
+    align-items: center;
 }
 
 .nav__list{
@@ -147,6 +142,7 @@
     width: 70%;
     padding-bottom: 10px;
 }
+
 
 
 
@@ -272,6 +268,9 @@
 
 
 
+
+
+
 /************************************ Sección tres ************************************/
 
 .seccion__tres{
@@ -292,16 +291,11 @@
 .tres__galeria{
     padding: 10px;
     text-align: center;
-    /*display: flex;*/
 }
 
 .tres__img{
     padding: 10px 50px;
 }
-
-
-
-
 
 
 
@@ -311,7 +305,7 @@
     position: relative;
     width: 100%;
     min-height: 660px;
-    background:  rgb(12, 99, 17);
+    background: linear-gradient(180deg, rgb(12, 99, 17), rgb(0, 0, 0));
     padding: 65px 50px;
     text-align: center;
     color: white;
@@ -348,6 +342,10 @@
     margin-top: 10px;
     height: 254px; 
 }
+
+
+
+
 
 
 
@@ -421,14 +419,29 @@
 }
 
 
+
+
+
+
+
+
+
+
+
 /************************************ Diseño Responsivo ************************************/
 
-@media (max-width: 800px)
-{
+
+@media (min-width: 300px) and (max-width: 767px)
+{   
+    .header{
+        background: linear-gradient(180deg, rgb(0, 0, 0),rgb(149, 47, 87));
+    }
+
     .nav__list{
         position: fixed;
+        top: -30px;
         width: 40%;
-        height: 670px;
+        height: 110vh;
         background-color:rgb(0, 0, 0);
         display: flex;
         flex-direction: column;
@@ -437,7 +450,9 @@
         transform: translateX(110%);
         right: 0;
         box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        z-index: 10;
     }
+
     
     .header__nav--image{
         padding: 30px;
@@ -446,7 +461,7 @@
     }
     
     .spread{
-        transform: translateX(0);   /* Clase para trasladar la navegación */
+        transform: translateX(0);  /* Clase para trasladar la navegación */
         transition: transform 0.3s ease-in-out;  /* Cuando se oculte el nav no sea tan brusco */
     }
 
@@ -476,45 +491,48 @@
     }
 
     .seccion__tres{
-        padding: 65px 40px;
+        padding: 0px;
     }
-
+    
+    .tres__galeria{
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .tres__img{
+        padding: 10px 20px;
+    }
 
     .tres__titulo{
-        padding: 0px;
+        padding-top: 65px;
     }
 
-    .tecno__card{
-        padding-top: 80px;
+    .seccion__cuatro{
+        padding: 65px 50px;
     }
 
-    .tres__img{
-        padding: 10px 30px;
-    }
-    
-
-    .card__img{
-        width: 300%;
-        padding: 0px;
-        align-content: center;
-    }
-
-
-    .cuatro__img{
-        overflow: hidden;
-        display: block;
-        margin: auto;
-    }
-    
     .cuatro__logos1{
-        margin-top: 15px;
+        width: 80%;
         height: 200px;
-
     }
     
     .cuatro__logos2{
-        margin-top: 10px;
-        height: 170px;
+        width: 80%;
+        height: 154px;
+    }
+
+    .cinco__subtitulo .cuatro__subtitulo{
+        font-size: 14px;
     }
 
 }
+
+
+@media (min-width: 768px) and (max-width: 991px)
+{}
+
+@media (min-width: 992px) and (max-width: 1199px)
+{}
+
+@media (min-width: 1200px)
+{}
